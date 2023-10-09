@@ -147,7 +147,7 @@ if(isset($_POST['send_msg'])){
                     
                     <form action="" method="post" class="col-4">
                         <input type="hidden" name="cart_id" value="<?php echo $row['id']?>">
-                        <input type="number" name="update_quantity" class="form-control w-50" value="<?php echo $row['quantity']?>">
+                        <input type="number" name="update_quantity" class="form-control w-50" min="1" value="<?php echo $row['quantity']?>">
                         <input type="submit" name="update_cart" value="Update" class="btn btn-warning my-3" >
                     </form>
                     
