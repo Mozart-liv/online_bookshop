@@ -105,7 +105,7 @@ if(isset($_POST['send_msg'])){
                     <div class="mt-3"><?php echo $row['price'] ?> /Ks</div>
                 </div>
                 
-                <input type="number" name="product_quantity" value="1" id="" class="form-control mx-3  w-25" >
+                <input type="number" name="product_quantity" value="1" min="1" id="" class="form-control mx-3  w-25" >
                 <input type="hidden" name="product_name" value="<?php echo $row['name'] ?>">  
                 <input type="hidden" name="product_price" value="<?php echo $row['price'] ?>">
                 <input type="hidden" name="product_img" value="<?php echo $row['img'] ?>">  
