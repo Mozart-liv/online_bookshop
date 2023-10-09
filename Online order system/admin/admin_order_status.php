@@ -55,12 +55,12 @@ if(isset($_GET['delete'])){
                 <p> <b>place on: </b><span><?php echo $row['order_at']?></span></p>
                 <form action="" method="post">
                     <input type="hidden" name="order_id" value="<?php echo $row['id']?>">
-                    <select name="delivery" class="form-select my-3">
+                    <select name="delivery" class="form-select my-3" required>
                         <option value="" selected disabled>Delivery Status (<?php echo $row['delivery']?>)</option>
                         <option value="pending">Pending</option>
                         <option value="completed">Completed</option>
                     </select>
-                    <select name="payment" class="form-select my-3">
+                    <select name="payment" class="form-select my-3" required>
                         <option value="" selected disabled>Payment Status (<?php echo $row['payment']?>)</option>
                         <option value="pending">Pending</option>
                         <option value="completed">Completed</option>
